@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Details Form</h1>
+        <table id="tableup">
+            <tr>
+                <td><b>Name:</b></td>
+                <td><input type="text" placeholder="Enter Name" id="name"></td>
+            </tr>
+
+            <tr>
+                <td><b>Age:</b></td>
+                <td><input type="text" placeholder="Enter Age" id="age"></td>
+            </tr>
+
+            <tr>
+                <td><b>Gender:</b></td>
+                <td><input type="radio" class="gender">Male
+                    <input type="radio" class="gender">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Course</b></td>
+                <td><select id="course">
+                        <option>--Select--</option>
+                        <option>Python</option>
+                        <option>JavaScript</option>
+                        <option>Java</option>
+                        <option>Angular Js</option>
+                        <option>React Js</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td><b>E-mail</b></td>
+                <td><input type="text" id="mail"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button id="savebtn" onclick="update()">Save</button></td>
+            </tr>
+
+            <table id="tabledown">
+                <tr>
+                    <td><b>Name</b></td>
+                    <td><b>Age</b></td>
+                    <td><b>Gender</b></td>
+                    <td><b>Course</b></td>
+                    <td><b>E-mail</b></td>
+                    <td><b>Action</b></td>
+
+                </tr>
+            </table>
+
+        </table>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
